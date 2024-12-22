@@ -396,7 +396,6 @@ b{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 25px 5%;
 }
 
 .projectBox{
@@ -431,7 +430,7 @@ b{
   width: 40%;
   margin: 25px 3% 0;
   border-radius: 5px;
-  background-color: #431f47;
+  background-color: rgba(67, 31, 71, 0.34);
   color: #E7E7E7;
   height: 30px;
   cursor:pointer;

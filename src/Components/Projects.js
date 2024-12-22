@@ -1,21 +1,22 @@
 import React from 'react';
 import ProjectBox from './ProjectBox';
-import NewsletterImage from '../images/NewsletterImage.png';
-import RogfreeImage from '../images/RogfreeImage.png';
-import TindogImage from '../images/TindogImage.png';
-import WigglesImage from '../images/WigglesImage.png';
+import Imagenotfound from '../images/Imagenotfound.jpg';
 
 const Projects = () => {
   return (
     <div>
-      <h1 className='projectHeading'>My <b>Projects</b></h1>
+      <h1 className='projectHeading'>My <b>personal projects</b></h1>
       <div className='project'>
-        <ProjectBox projectPhoto={WigglesImage} projectName="Wiggles" />
-        <ProjectBox projectPhoto={NewsletterImage} projectName="Newsletter" />
-        <ProjectBox projectPhoto={RogfreeImage} projectName="RogFree" />
-        <ProjectBox projectPhoto={TindogImage} projectName="Tindog" />
-      </div>
+          <ProjectBox projectPhoto={Imagenotfound} projectName="Trefle" />
+          <ProjectBox projectPhoto={Imagenotfound} projectName="CareerBuilder" />
+          <ProjectBox projectPhoto={Imagenotfound} projectName="RepertoirePlus" />
+          <ProjectBox projectPhoto={Imagenotfound} projectName="SchoolManagement" />
+          <ProjectBox projectPhoto={Imagenotfound} projectName="Quiz" />
+          <ProjectBox projectPhoto={Imagenotfound} projectName="ECommerceIT" />
+          <ProjectBox projectPhoto={Imagenotfound} projectName="ClubEvents" />
+          <ProjectBox projectPhoto={Imagenotfound} projectName="SABOEG" />
 
+      </div>
     </div>
   )
 }
