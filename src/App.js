@@ -7,55 +7,72 @@ import About from "./Components/About";
 import Resume from "./Components/Resume";
 import Project from "./Components/Projects";
 import MoveToTop from "./Components/MoveToTop";
-import Lottie from  "lottie-react";
+import Lottie from "lottie-react";
 import nightsky from "./LottieFiles/night-sky.json";
 import HashLoader from "react-spinners/HashLoader";
-
+import { Cursor } from "./Components/Cursor";
 
 function App() {
-  const[Loading,SetLoading]=useState(true);
+  const [loading, setLoading] = useState(true);
+  const [cursorPosition, setCursorPosition] = useState({ top: 0, left: 0 });
 
-  useEffect(()=>{
-    SetLoading(true)
+  useEffect(() => {
+    setLoading(true);
+    const timeout = setTimeout(() => {
+      setLoading(false);
+    }, 1900);
 
-    setTimeout(()=>{
-    SetLoading(false)}
-    ,1900)
-  },[])  
-  
+    return () => clearTimeout(timeout);
+  }, []);
+
+  useEffect(() => {
+    const handleMouseMove = (event) => {
+      setCursorPosition({
+        top: event.clientY + window.scrollY,
+        left: event.clientX + window.scrollX,
+      });
+    };
+
+    window.addEventListener('mousemove', handleMouseMove);
+
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, []);
+
   return (
-    <>
-      {Loading ? (
-      <div className="loader"> 
-        <HashLoader
-          color={'#9067C6'}
-          loading={true}
-          size={100}
-          aria-label="Loading Spinner"
-          data-testid="loader"
-        />
-      </div>
-      ):(
-      <div>
-      
-      <Lottie className="bg" animationData={nightsky} loop={true} />  
-      <Lottie className="bgtwo" animationData={nightsky} loop={true} />   
-      <Lottie className="bgtemp" animationData={nightsky} loop={true} /> 
+      <>
+        <Cursor top={cursorPosition.top} left={cursorPosition.left} />
+        {loading ? (
+            <div className="loader">
+              <HashLoader
+                  color={'#9067C6'}
+                  loading={true}
+                  size={100}
+                  aria-label="Loading Spinner"
+                  data-testid="loader"
+              />
+            </div>
+        ) : (
+            <div>
+              <Lottie className="bg" animationData={nightsky} loop={true} />
+              <Lottie className="bgtwo" animationData={nightsky} loop={true} />
+              <Lottie className="bgtemp" animationData={nightsky} loop={true} />
 
-      <Nav/>
-      <MoveToTop/>
+              <Nav />
+              <MoveToTop />
 
-      <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/About" element={<About/>}/>
-        <Route path="/Project" element={<Project/>}/>
-        <Route path="/Resume" element={<Resume/>}/>
-      </Routes>
-      
-      <Footer/>
-      </div>
-      )}  
-    </>
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/About" element={<About />} />
+                <Route path="/Project" element={<Project />} />
+                <Route path="/Resume" element={<Resume />} />
+              </Routes>
+
+              <Footer />
+            </div>
+        )}
+      </>
   );
 }
 

@@ -2,7 +2,19 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  cursor: none;
 }
+.cursor {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #9067C6;
+  border: 2px solid #ffffff;
+  pointer-events: none;
+  transition: transform 0.1s ease-out;
+}
+
 
 #root{
   min-height: 100vh;
