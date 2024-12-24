@@ -14,32 +14,27 @@
   pointer-events: none;
   transition: transform 0.1s ease-out;
 }
-
-
 #root{
   min-height: 100vh;
   position: relative;
   overflow-x: hidden;
   -webkit-tap-highlight-color: transparent;
 }
-
 .loader{
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 body{
   font-family: 'Raleway', sans-serif;
-  background-color: #031926;
-  color: #E7E7E7;
+  background-color: #ADBC9F;
+  color: #436850;
   min-height: 100vh;
 }
-
 b{
   font-weight: 900;
-  color: #9067C6;
+  color: #12372A;
 }
 
 /* Scrollbar */
@@ -48,11 +43,11 @@ b{
   scroll-behavior: smooth;
 }
 ::-webkit-scrollbar-track {
-  background: #274656;
+  background: #12372A;
   border-radius: 100px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #01111a;
+  background: #12372A;
   border-radius: 100px;
 }
 
@@ -93,7 +88,7 @@ b{
 }
 
 .blur{
-  background-color:#01111a8d;
+  background-color: rgba(173, 188, 159, 0.53);
   backdrop-filter: blur( 15px );
   -webkit-backdrop-filter: blur( 20px );
 }
@@ -102,7 +97,7 @@ b{
   font-size: 32px;
   letter-spacing: 2px;
   padding-left: 7%;
-  color: #9067C6;
+  color: #436850;
   display: flex;
   align-items: center;
   text-align: center;
@@ -124,7 +119,7 @@ b{
 }
 
 .NavbarLinks a{
-  color: #c2c1c2;
+  color: #436850;
   display:flex;
   align-items: center;
   justify-content: space-between;
@@ -136,10 +131,10 @@ b{
 }
 
 .NavbarLinks a:hover{
-  color: #ffffff;
+  color: #12372A;
 }
 .NavbarLinks a::after{
-  background-color: #ffffff;
+  background-color: #12372A;
   content: "";
   position: absolute;
   height: 3px;
@@ -169,7 +164,7 @@ b{
     position: fixed;
     inset: 0 0 0 50%;
     gap: 50px;
-    background-color:#431f47;
+    background-color:#12372A;
     height: 100vh;
     padding-top: max(20%,120px);
     transform: translateX(100%);
@@ -309,7 +304,7 @@ b{
   padding-bottom: 40px;
 }
 .AboutText a{
-  color: #9067C6;
+  color: #12372A;
   text-decoration: underline;
   font-weight: bold;
 }
@@ -357,14 +352,14 @@ b{
   align-items: center;
   justify-content: center;
   margin: 0px 25px 25px 0px;
-  border: 3px solid #431f47;
+  border: 3px solid #12372A;
   font-size: 64px;
   border-radius: 5px;
   transition: 0.5s;
 }
 .SkillBox:hover{
   transform: scale(1.2);
-  box-shadow: 0 2px 8px 0 #431f47;
+  box-shadow: 0 2px 8px 0 #12372A;
 }
 
 .SkillsHeading{
@@ -412,7 +407,7 @@ b{
 
 .projectBox{
   width: 350px;
-  border: 3px solid #431f47;
+  border: 3px solid #12372A;
   border-radius: 5px;
   text-align: center;
   padding: 15px;
@@ -425,7 +420,7 @@ b{
 }
 .projectBox:hover{
   transform: scale(1.05);
-  box-shadow: 0 4px 10px 0 #431f47;
+  box-shadow: 0 4px 10px 0 #12372A;
 }
 
 .projectPhoto{
@@ -442,7 +437,7 @@ b{
   width: 40%;
   margin: 25px 3% 0;
   border-radius: 5px;
-  background-color: rgba(67, 31, 71, 0.34);
+  background-color: rgba(18, 55, 42, 0.54);
   color: #E7E7E7;
   height: 30px;
   cursor:pointer;
