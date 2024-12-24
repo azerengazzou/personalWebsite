@@ -55,7 +55,7 @@ b{
 .bg{
   position:fixed;
   z-index: -1;
-  bottom: 0px;  
+  bottom: 0px;
 }
 
 .bgtwo{
@@ -213,19 +213,25 @@ b{
 
 /* HOME PAGE */
 
-.HomePage{
+.HomePage {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
   min-height: 80vh;
   margin-top: 100px;
   margin-bottom: -50px;
-  align-items: center;
+  text-align: center; /* Ensure text is centered within the container */
 }
-.HomeText h1{
+.HomeText h1 {
   font-weight: 600;
-  font-size: 38px;
-  letter-spacing: 0.7px;
+  font-size: 6rem;
+  letter-spacing: 1px;
   padding-top: 10px;
+  line-height: 1.2
+}
+
+.HomeText h1 b {
+  font-size: 54px; /* Make bold text larger */
 }
 
 .TypeEffect{
@@ -252,8 +258,7 @@ b{
     display: inline-block;
   }
   .illustration{
-    margin: auto;
-    margin-bottom: 50px;
+    margin: auto auto 50px;
   }
 }
 
@@ -266,7 +271,7 @@ b{
   }
   .HomeText h1{
     font-weight: 500;
-    font-size: 28px;
+    font-size: 30px;
   }  
   .TypeEffect{
     font-weight: 500;
