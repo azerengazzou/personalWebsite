@@ -7,9 +7,6 @@ import About from "./Components/About";
 import Resume from "./Components/Resume";
 import Project from "./Components/Projects";
 import MoveToTop from "./Components/MoveToTop";
-import Lottie from "lottie-react";
-import nightsky from "./LottieFiles/night-sky.json";
-
 import HashLoader from "react-spinners/HashLoader";
 import { Cursor } from "./Components/Cursor";
 
@@ -56,10 +53,6 @@ function App() {
             </div>
         ) : (
             <div>
-              {/*<Lottie className="bg" animationData={nightsky} loop={true} />*/}
-              {/*<Lottie className="bgtwo" animationData={nightsky} loop={true}/>*/}
-              {/*<Lottie className="bgtemp" animationData={nightsky} loop={true}/>*/}
-
               <Nav />
               <MoveToTop />
 
