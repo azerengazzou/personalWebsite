@@ -11,15 +11,18 @@ const About = () => {
         <div className='AboutText'>
           <h1 className='AboutTextHeading'>Get to <b>know</b> me!</h1>
           <p>
-            Hi, my name is <b>Azer Engazzou</b> and I am from Tunisia. I am a <b>Software Engineer</b>
-            with a degree from <b>Ecole Polytechnique Sousse</b>, graduated in August 2023.<br/><br/>
-            With over <b>2 years of experience</b> in full-stack development, I specialize in <b>.NET</b>
-            and <b>React</b>. I enjoy building scalable, maintainable systems and am skilled in design patterns,
-            SOLID principles, and efficient CI/CD pipelines. Currently, I’m expanding my knowledge in <b>MAUI</b>
-             for mobile development.<br/><br/>
-            I am <b>open</b> to new collaborations or opportunities where I can contribute and grow. Feel free
-            to connect with me—links are in the footer.<br/>
-            Apart from coding, I enjoy exploring new technologies and optimizing workflows.
+            Hi, I'm <b>Azer Engazzou</b> a passionate Software Engineer from Tunisia.  I hold a degree in
+             <b>Software Engineering</b> from <b>Polytechnique private school of Sousse</b>, where I graduated in 2023.<br/><br/>
+            With <b> over 2 years of experience</b> in full-stack development, I specialize in <b>.NET</b>
+            and <b>React</b>.  I’m dedicated to building scalable, maintainable applications and have a strong foundation in
+             <b>design patterns, SOLID principles</b> and implementing <b>efficient CI/CD pipelines.</b>
+             Currently, I'm expanding my skill set by exploring <b>.NET MAUI</b> for cross-platform mobile development.<br/>
+              I'm always open to <b>collaborations</b> and <b>new 
+              opportunities</b> where I can contribute meaningfully
+               and continue growing professionally. <br/>Feel free
+                to reach out contact links are available in the footer.
+
+              When I'm not coding, I enjoy discovering new technologies and refining development workflows to boost efficiency and quality.
           </p>
         </div>
 
