@@ -9,12 +9,10 @@ import Project from "./Components/Projects";
 import MoveToTop from "./Components/MoveToTop";
 import HashLoader from "react-spinners/HashLoader";
 import { Cursor } from "./Components/Cursor";
-import ReactGA from 'react-ga4';
+import ReactGA from 'react-ga';
 
-const GA_MEASUREMENT_ID = 'G-VCWH0047W9';
-export const initGA = () => {
-  ReactGA.initialize(GA_MEASUREMENT_ID);
-};
+  const TRACKING_ID = "G-VCWH0047W9"; // OUR_TRACKING_ID
+  ReactGA.initialize(TRACKING_ID);
 
 export const trackPageView = (path) => {
   ReactGA.send({ hitType: 'pageview', page: path });
