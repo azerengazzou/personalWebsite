@@ -8,7 +8,14 @@ import {BsPerson, BsCodeSlash} from "react-icons/bs";
 
 const Nav = () => {
     const [navbarblur, setnavbarblur]=useState(false);
-
+    const handleNavClick = (label) => {
+    ReactGA.event({
+        category: 'Navigation',
+        action: 'Clicked Nav Link',
+        label,
+    });
+    hideMenu();
+    };
     function scrollHandler() {
         if (window.scrollY >= 20) {
             setnavbarblur(true);
@@ -51,9 +58,10 @@ const Nav = () => {
         </div>
 
         <ul className='NavbarLinks'>
-            <li onClick={hideMenu}><Link to="/"><AiOutlineHome/> Home</Link></li>
-            <li onClick={hideMenu}><Link to="/About"><BsPerson/> About</Link></li>
-            <li onClick={hideMenu}><Link to="/Project"><BsCodeSlash/> Project</Link></li>
+            <li onClick={() => handleNavClick('Home')}><Link to="/"><AiOutlineHome /> Home</Link></li>
+            <li onClick={() => handleNavClick('About')}><Link to="/About"><AiOutlineHome /> About</Link></li>
+            <li onClick={() => handleNavClick('Project')}><Link to="/Project"><AiOutlineHome /> Project</Link></li>
+
             {/*<li onClick={hideMenu}><Link to="/Resume"><CgFileDocument/> Resume<span>Soon</span></Link></li>*/}
         </ul>
         
