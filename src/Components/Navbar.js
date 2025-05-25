@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import {AiOutlineHome} from "react-icons/ai";
 import {BsPerson, BsCodeSlash} from "react-icons/bs";
 // import {CgFileDocument} from "react-icons/cg";
+import ReactGA from 'react-ga';
 
 
 const Nav = () => {

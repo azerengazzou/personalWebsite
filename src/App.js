@@ -10,6 +10,7 @@ import MoveToTop from "./Components/MoveToTop";
 import HashLoader from "react-spinners/HashLoader";
 import { Cursor } from "./Components/Cursor";
 import ReactGA from 'react-ga';
+import { useLocation } from 'react-router-dom';
 
   const TRACKING_ID = "G-VCWH0047W9"; // OUR_TRACKING_ID
   ReactGA.initialize(TRACKING_ID);
@@ -22,9 +23,6 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [cursorPosition, setCursorPosition] = useState({ top: 0, left: 0 });
   const location = useLocation();
-  useEffect(() => {
-      initGA();
-    }, []);
 
     useEffect(() => {
     trackPageView(location.pathname + location.search);
