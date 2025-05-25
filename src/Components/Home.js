@@ -1,8 +1,6 @@
-import React from 'react';
 import Typed from "./Typed.js";
 import Tilt from 'react-parallax-tilt';
 import Avatar from '../images/Avatar.png';
-import {CiCoffeeCup} from "react-icons/ci";
 
 const Home = () => {
   return (
