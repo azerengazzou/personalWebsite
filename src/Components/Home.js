@@ -19,18 +19,15 @@ const Home = () => {
         <div className='AboutText'>
           <h1 className='AboutTextHeading'>Brief <b>introduction</b></h1>
           <p>
-            I thrive on transforming ideas into functional, user-centric applications
-            that solve real-world problems. With a solid foundation in <b>software architecture</b>
-            and <b>design patterns</b>, including the principles of <b>SOLID</b>, I specialize in
-            <b>.NET</b> and <b>React</b>, building robust back-end systems and dynamic, responsive
-            front-end interfaces.<br/>
-            My goal is to create seamless, scalable, and maintainable systems that deliver long-term impact.<br/><br/>
-            I’m also highly proficient in <b>CI/CD pipelines</b>, ensuring efficient development and
-            deployment workflows. I am currently exploring <b>MAUI</b> to broaden my mobile development
-            expertise, while continuing to refine my understanding of advanced architectural concepts, microservices,
-            and scalable system design.<br/><br/>
-            Also, I love <b>coffee</b> <CiCoffeeCup style={{scale: "1.5", rotate: "15deg"}}/>
+            I’m an experienced <b>software developer</b> with a passion for crafting thoughtful,
+            user focused digital experiences. Over the years, I’ve brought complex ideas to life 
+            building scalable back-end systems and responsive front-end interfaces that don’t just work, but last.
+            <br></br>I take pride in writing clean,
+            reliable code and designing solutions that solve real problems with purpose and precision.
+            <br></br>
+            When I’m not immersed in architecture or refining a user flow, you’ll likely find me with a strong cup of coffee, digging into the little details that make great software feel effortless.
           </p>
+        
         </div>
         <Tilt>
           <img className='Avatar' src={Avatar} alt=""/>

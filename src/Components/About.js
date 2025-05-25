@@ -9,21 +9,28 @@ const About = () => {
     <>
       <div className='AboutPage'>
         <div className='AboutText'>
-          <h1 className='AboutTextHeading'>Get to <b>know</b> me!</h1>
+          <h1 className="AboutTextHeading">Get to <b>know</b> me!</h1>
           <p>
-            Hi, I'm <b>Azer Engazzou</b> a passionate Software Engineer from Tunisia.  I hold a degree in
-             <b>Software Engineering</b> from <b>Polytechnique private school of Sousse</b>, where I graduated in 2023.<br/><br/>
-            With <b> over 2 years of experience</b> in full-stack development, I specialize in <b>.NET</b>
-            and <b>React</b>.  I’m dedicated to building scalable, maintainable applications and have a strong foundation in
-             <b>design patterns, SOLID principles</b> and implementing <b>efficient CI/CD pipelines.</b>
-             Currently, I'm expanding my skill set by exploring <b>.NET MAUI</b> for cross-platform mobile development.<br/>
-              I'm always open to <b>collaborations</b> and <b>new 
-              opportunities</b> where I can contribute meaningfully
-               and continue growing professionally. <br/>Feel free
-                to reach out contact links are available in the footer.
-
-              When I'm not coding, I enjoy discovering new technologies and refining development workflows to boost efficiency and quality.
+            Hi, I’m <b>Azer Engazzou</b> a software engineer from Tunisia who loves turning complex problems into simple, elegant solutions that people can rely on.  
+           <br></br> Since graduating in 2023 from the <b>Polytechnique Private School of Sousse</b> with a degree in <b>Software Engineering</b>, I’ve spent over two years building applications that are not just functional, but scalable and maintainable especially in areas where accuracy and trust really matter.
           </p>
+<br></br>
+          <p>
+            I work mostly with <b>.NET</b> and <b>React</b>, and I’m passionate about writing clean code that stands the test of time. Following principles like <b>SOLID</b> and using proven design patterns helps me create software that’s both reliable and easy to grow.  
+            I also enjoy streamlining the development process with smart <b>CI/CD pipelines</b>, so teams can ship features faster without sacrificing quality.
+          </p>
+<br></br>
+          <p>
+            Right now, I’m diving into <b>.NET MAUI</b> to build smooth, cross-platform mobile apps always eager to learn and expand what I can offer.  
+            I’m open to collaborations and new opportunities where I can contribute, learn, and make a real difference.
+          </p>
+
+          <p>
+            When I’m not coding, you’ll often find me exploring new tech or perfecting my workflow usually with a good cup of coffee in hand.  
+            If you’d like to connect or chat, my contact links are down in the footer. I’d love to hear from you!
+          </p>
+
+
         </div>
 
         <div>
